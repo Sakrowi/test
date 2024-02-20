@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST</title>
+</head>
+<body>
+    <style>
+        .mainmenu{
+            background-color: blue;
+            height: 40px;
+            width: 100%;
+            position: fixed;
+            top: 0%;
+        }
+        .mainmenu ul{
+            list-style-type: none;
+            margin: 0%;
+            padding: 0%;
+        }
+        .mainmenu ul li{
+            display: inline-block;
+        }
+        .mainmenu ul li a{
+            text-decoration: none;
+            text-transform: uppercase;
+            color: white;
+            padding: 10px 20px;
+            display: block;
+        }
+        .mainmenu ul li a:hover{
+            background-color: skyblue;
+        }
+        .mainmenu ul ul{
+            display: none;
+            background-color: blue;
+            margin: 0px;
+            padding: 0px;
+            position: absolute;
+        }
+        .mainmenu ul li:hover>ul{
+            display: block;
+        }
+        .mainmenu ul li ul li{
+            display: block;
+        }
+    </style>
+    <div class="mainmenu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Service</a>
+                <ul>
+                    <li><a href="#">Network Installation</a></li>
+                    <li><a href="#">Software Development</a></li>
+                    <li><a href="#">Application</a></li>
+                </ul>    
+            </li>
+            <li><a href="#">Product</a></li>
+        </ul>
+    </div>
+</body>
+</html>
